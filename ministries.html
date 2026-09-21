@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxiliary Ministries | Thirunivasam Gospel Ministries</title>
+    <meta name="description" content="Explore auxiliary ministries by Thirunivasam Gospel Ministries: Free Tailoring School, Poor Relief, Sunday Bible School, and Spiritual Counseling.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        if (localStorage.getItem('thirunivasam_splash_seen') || document.cookie.includes('thirunivasam_splash_seen=true')) {
+            document.documentElement.classList.add('splash-already-seen');
+        }
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ml,ta,te,kn,hi,mr,bn,gu,pa,ur',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+                multilanguagePage: true
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+
+    <!-- First-Time Language Selection Splash Screen Overlay -->
+    <div class="lang-splash-backdrop hidden" id="langSplashOverlay">
+        <div class="splash-card glass-panel notranslate" translate="no">
+            <img src="uploads/logo.png" alt="Thirunivasam Church Logo" class="splash-logo-img">
+            <h2 class="splash-title">THIRUNIVASAM</h2>
+            <span class="splash-sub">EST. 1983</span>
+            
+            <p class="splash-instruction">Select Your Preferred Language / നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക</p>
+            
+            <form id="splashLangForm">
+                <div class="splash-select-wrapper">
+                    <select id="splashLanguageSelect" class="splash-select notranslate" translate="no">
+                        <option value="en">English</option>
+                        <option value="ml" selected>മലയാളം (Malayalam)</option>
+                        <option value="ta">தமிழ் (Tamil)</option>
+                        <option value="te">తెలుగు (Telugu)</option>
+                        <option value="kn">കന്നഡ (Kannada)</option>
+                        <option value="hi">हिंदी (Hindi)</option>
+                        <option value="mr">मരാठी (Marathi)</option>
+                        <option value="bn">বাংলা (Bengali)</option>
+                        <option value="gu">ગુજરાતી (Gujarati)</option>
+                        <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+                        <option value="ur">اردو (Urdu)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary splash-submit-btn">
+                    Continue to Website / പ്രവേശിക്കുക <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="uploads/logo.png" alt="Thirunivasam Holy Heart Prayer Squad Logo" class="church-logo-img">
+                <div class="logo-text">
+                    <span class="brand-name">THIRUNIVASAM</span>
+                    <span class="brand-sub">EST. 1983</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="vision-and-mission.html" class="nav-link"><i class="fa-solid fa-compass"></i> Vision & Mission</a>
+                <a href="services.html" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Services</a>
+                <a href="ministries.html" class="nav-link active"><i class="fa-solid fa-hand-holding-heart"></i> Ministries</a>
+                <a href="notifications.html" class="nav-link"><i class="fa-solid fa-bell"></i> Announcements</a>
+                <a href="contact-us.html" class="nav-link"><i class="fa-solid fa-location-dot"></i> Contact Us</a>
+                
+                <!-- Custom Ultra-Modern Language Selector inside Menu -->
+                <div class="custom-lang-selector glass-pill notranslate nav-drawer-lang" translate="no">
+                    <i class="fa-solid fa-globe lang-globe-icon"></i>
+                    <select id="customLanguageSelect" class="lang-select-input notranslate" translate="no" aria-label="Select Language">
+                        <option value="en" class="notranslate" translate="no">English</option>
+                        <option value="ml" class="notranslate" translate="no">മലയാളം (Malayalam)</option>
+                        <option value="ta" class="notranslate" translate="no">தமிழ் (Tamil)</option>
+                        <option value="te" class="notranslate" translate="no">తెలుగు (Telugu)</option>
+                        <option value="kn" class="notranslate" translate="no">കന്നഡ (Kannada)</option>
+                        <option value="hi" class="notranslate" translate="no">हिंदी (Hindi)</option>
+                        <option value="mr" class="notranslate" translate="no">മരാठी (Marathi)</option>
+                        <option value="bn" class="notranslate" translate="no">বাংলা (Bengali)</option>
+                        <option value="gu" class="notranslate" translate="no">ગુજરાતી (Gujarati)</option>
+                        <option value="pa" class="notranslate" translate="no">ਪੰਜਾਬੀ (Punjabi)</option>
+                        <option value="ur" class="notranslate" translate="no">اردو (Urdu)</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down lang-arrow-icon"></i>
+                </div>
+                <button class="btn btn-outline drawer-prayer-btn" id="openPrayerBtn">
+                    <i class="fa-solid fa-hands-praying"></i> Prayer Request
+                </button>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Hidden Google Translate Element -->
+                <div id="google_translate_element" style="display:none;"></div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <section class="section pt-160 bg-alt">
+        <div class="container text-center">
+            <span class="subheading">FAITH IN ACTION</span>
+            <h1 class="section-title">Our Auxiliary Ministries</h1>
+            <p class="section-desc">Extending Christ's compassion through vocational training, social welfare, counseling, and youth ministry.</p>
+        </div>
+    </section>
+
+    <!-- Ministries Grid Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="glass-card flex-gap-20">
+                    <div class="mini-icon mx-0 mb-0"><i class="fa-solid fa-scissors"></i></div>
+                    <div>
+                        <h3>Free Tailoring School</h3>
+                        <p>Providing free vocational tailoring and garment-making courses to empower women and youth from underprivileged backgrounds with self-sustaining employment skills.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card flex-gap-20">
+                    <div class="mini-icon mx-0 mb-0"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <div>
+                        <h3>Life & Pastoral Counseling</h3>
+                        <p>Offering personalized and confidential spiritual counseling to individuals and families seeking mental peace, marital restoration, and guidance in difficult circumstances.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card flex-gap-20">
+                    <div class="mini-icon mx-0 mb-0"><i class="fa-solid fa-bowl-food"></i></div>
+                    <div>
+                        <h3>Relief Aid for the Poor</h3>
+                        <p>Providing essential food kits, clothing, medical assistance, and financial relief to destitute families, widows, and orphans in surrounding regions.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card flex-gap-20">
+                    <div class="mini-icon mx-0 mb-0"><i class="fa-solid fa-child-reaching"></i></div>
+                    <div>
+                        <h3>Sunday Bible School</h3>
+                        <p>Nurturing children and adolescents with biblical moral foundation, Christian songs, interactive storytelling, and youth camps to raise faithful future generations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="uploads/logo.png" alt="Holy Heart Prayer Squad Logo" class="footer-logo-img">
+                <span class="brand-name">THIRUNIVASAM</span>
+                <p>Thirunivasam Gospel Ministries (Holy Heart Prayer Squad Trust Est. 1983), Chemboor.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="vision-and-mission.html">Vision & Mission</a>
+                <a href="services.html">Schedule</a>
+                <a href="ministries.html">Ministries</a>
+                <a href="notifications.html">Announcements</a>
+                <a href="contact-us.html">Contact Us</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com/thirunivasam.gospel.ministries" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/malayalam_christian_messages" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://wa.me/+919497571150" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="http://thirunivasamchurch.blogspot.in" target="_blank" aria-label="Blog"><i class="fa-solid fa-blog"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 1983 - <span id="currentYear">2026</span> Thirunivasam Gospel Ministries. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: Prayer Request Modal -->
+    <div class="modal-backdrop" id="prayerModal">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="closePrayerModal">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-hands-praying modal-icon"></i>
+                <h3>Submit Your Prayer Request</h3>
+                <p>Your prayer request will be sent to the Thirunivasam Prayer Cell for continuous intercession.</p>
+            </div>
+            
+            <form id="prayerForm" class="modal-form">
+                <div class="form-group">
+                    <label for="prayerName">Full Name *</label>
+                    <input type="text" id="prayerName" class="form-input" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="prayerPhone">Phone Number *</label>
+                    <input type="tel" id="prayerPhone" class="form-input" placeholder="+91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                    <label for="prayerEmail">Email Address *</label>
+                    <input type="email" id="prayerEmail" class="form-input" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="prayerMessage">Your Prayer Request (നിങ്ങളുടെ പ്രാർത്ഥനാ വിഷയം) *</label>
+                    <textarea id="prayerMessage" class="form-input form-textarea" rows="4" placeholder="Write your prayer request here..." required></textarea>
+                </div>
+                <!-- Anti-Bot Math Captcha Challenge -->
+                <div class="form-group captcha-group">
+                    <label for="captchaAnswer">Security Check: <span id="captchaQuestion" class="text-accent font-bold"></span> = ? *</label>
+                    <div class="captcha-input-flex">
+                        <input type="number" id="captchaAnswer" class="form-input" placeholder="Enter answer" required>
+                        <button type="button" class="btn btn-sm btn-glass" id="refreshCaptchaBtn" title="Refresh Captcha"><i class="fa-solid fa-rotate-right"></i></button>
+                    </div>
+                    <small id="captchaError" class="text-red hidden mt-1"><i class="fa-solid fa-triangle-exclamation"></i> Incorrect Captcha answer. Please try again.</small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fa-solid fa-paper-plane"></i> Send Prayer Request
+                </button>
+            </form>
+            <div class="form-success hidden" id="prayerSuccess">
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <h4>Prayer Request Received!</h4>
+                <p>May God bless you and fulfill your prayers according to His rich grace. Our prayer cell will intercede for you.</p>
+                <button class="btn btn-glass mt-3" id="resetPrayerForm">Submit Another Request</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: WhatsApp Group Join Modal -->
+    <div class="modal-backdrop" id="whatsappModal">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="closeWhatsappModal">&times;</button>
+            <div class="modal-header">
+                <i class="fa-brands fa-whatsapp modal-icon text-green"></i>
+                <h3>Join WhatsApp Announcement Group</h3>
+                <p>Receive official updates, service notifications, and sermon links directly on WhatsApp.</p>
+            </div>
+
+            <form id="whatsappForm" class="modal-form">
+                <div class="form-group">
+                    <label for="waName">Full Name *</label>
+                    <input type="text" id="waName" class="form-input" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="waPhone">WhatsApp Mobile Number *</label>
+                    <input type="tel" id="waPhone" class="form-input" placeholder="+91 94975 71150" required>
+                </div>
+                <div class="form-group">
+                    <label for="waAddress">Address / Location *</label>
+                    <input type="text" id="waAddress" class="form-input" placeholder="Line 1, City, State, Country" required>
+                </div>
+                <div class="form-group">
+                    <label>Age Group *</label>
+                    <select id="waAge" class="form-input" required>
+                        <option value="">Select Age Group</option>
+                        <option value="Less than 13">Less than 13</option>
+                        <option value="13-18">13 - 18</option>
+                        <option value="19-25">19 - 25</option>
+                        <option value="26-35">26 - 35</option>
+                        <option value="36-50">36 - 50</option>
+                        <option value="Over 50">Over 50</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="waSuggestions">Suggestions (Optional)</label>
+                    <textarea id="waSuggestions" class="form-input form-textarea" rows="2" placeholder="Any message or suggestion for Thirunivasam..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Request to Join Group
+                </button>
+            </form>
+            <div class="form-success hidden" id="whatsappSuccess">
+                <i class="fa-solid fa-circle-check success-icon text-green"></i>
+                <h4>Join Request Submitted!</h4>
+                <p>Thank you! Your request has been logged. You will be added to the official WhatsApp Announcement Group shortly.</p>
+                <a href="https://wa.me/+919497571150?text=Hello%20Thirunivasam%20Church,%20I%20requested%20to%20join%20the%20WhatsApp%20Announcement%20Group." target="_blank" class="btn btn-primary mt-3">
+                    <i class="fa-brands fa-whatsapp"></i> Direct Message Pastor on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
